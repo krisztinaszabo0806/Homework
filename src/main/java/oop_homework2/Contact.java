@@ -4,11 +4,11 @@ public class Contact {
 
     int id;
 
-    String phoneNumber;
+    private String phoneNumber;
 
-    String firstName;
+    private String firstName;
 
-    String lastName;
+    private String lastName;
 
     public Contact(int id, String phoneNumber, String firstName, String lastName){
         this.id = id;

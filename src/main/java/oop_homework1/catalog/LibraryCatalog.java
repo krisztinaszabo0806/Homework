@@ -24,7 +24,7 @@ public class LibraryCatalog {
         books.add(thirdBook);
         books.add(forthBook);
 
-        for(int i=0;i<books.size();i++){
+        for (int i = 0; i < books.size(); i++) {
             System.out.println(books.get(i));
         }
 
