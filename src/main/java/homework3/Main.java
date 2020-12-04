@@ -10,7 +10,7 @@ public class Main {
         Person secondPerson = new Person("Rob", 35);
         Person thirdPerson = new Person("Mary", 15);
 
-        TreeSet<Person> nameComp = new TreeSet<Person>(new NameComparator());
+        Set<Person> nameComp = new TreeSet<Person>(new NameComparator());
         nameComp.add(firstPerson);
         nameComp.add(secondPerson);
         nameComp.add(thirdPerson);
@@ -18,7 +18,7 @@ public class Main {
             System.out.println(person);
         }
         System.out.println("===========================");
-        TreeSet<Person> ageComp = new TreeSet<Person>(new AgeComparator());
+        Set<Person> ageComp = new TreeSet<Person>(new AgeComparator());
         ageComp.add(firstPerson);
         ageComp.add(secondPerson);
         ageComp.add(thirdPerson);
@@ -58,8 +58,8 @@ public class Main {
             System.out.println("This person: " + entry.getKey() + " and has the following hobbies: " + entry.getValue());
 
             List<Country> entryList = new ArrayList<>();
-            entryList.addAll(firstHobby.addressList);
-            entryList.addAll(secondHobby.addressList);
+            entryList.addAll(firstHobby.countryList);
+            entryList.addAll(secondHobby.countryList);
             System.out.println("These hobbies can be practiced in: ");
 
 

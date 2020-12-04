@@ -14,12 +14,12 @@ public class Hobby {
         this.frequency = frequency;
     }
 
-    List<Country> addressList = new ArrayList<>();
+    List<Country> countryList = new ArrayList<>();
 
 
     public void addCountry(Country country) {
         this.country = country;
-        this.addressList.add(this.country);
+        this.countryList.add(this.country);
 
     }
 
